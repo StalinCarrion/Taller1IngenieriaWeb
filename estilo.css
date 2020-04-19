@@ -1,0 +1,27 @@
+h1{
+	font-size: 	20px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+h2{
+	font: bold 14px sans-serif;
+}
+header, section, footer, aside, nav, article, hgroup{
+	/*
+	sive para poder visualizar la division por bloques de la pagina
+	border: 1px solid black;
+	*/
+
+	display: block;
+}
+body{
+	text-align: centers;
+}
+.agrupar{
+	width: 960px;
+	background: green;
+	margin: 15px auto;
+	/*	padding es un margen de fuera hacia adentro y
+	 el margin es de adentro hacia afuera*/
+	padding: 40px;
+}
