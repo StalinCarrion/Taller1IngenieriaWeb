@@ -41,12 +41,18 @@ section.galeriaPrincipal{
 	margin-top: 2px;
 	height: 450px;
 }
-section.noticias{
-	margin-top: 2px;
+section.galeriaPrincipal h2{
 	text-align: center;
-	border: 2px solid red;
- 	border-radius: 8px;
- 	text-shadow: 2px 2px 5px red;
+}
+section.noticias{
+	text-shadow: 2px 2px 5px red;
+	border-radius: 8px;
+	border: 1.5px solid red;
+	padding: 5px;
+	font: bold 14px verdana;
+	text-align: center;
+	background: #ABE102;
+
 }
 aside.sponsor{
 	border-style: outset;
@@ -54,8 +60,40 @@ aside.sponsor{
 	text-shadow: 1px 1px orange;
 	font-weight: 900;
 }
-footer.pie{
-	font: italic bold 20px/40px Georgia, serif;
-	text-align: right;
-	padding-right: 10px;
+
+#sponsor1{
+	width: 10%;
+  	height: 20%;  	
 }
+
+#Logo{
+	display: block;
+	border-radius: 4px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+  	border: 2px solid #FAFE08;
+}
+
+#Logo:hover{
+	box-shadow: 0 0 4px 3px rgba(236, 34, 10, 0.5);
+	transform: scaleX(-1);
+}
+
+.redes:hover {
+    opacity: 0.7;
+}
+.redes { 
+  color: white;
+  border: 1px solid #F85604;
+}
+#derechos{
+	text-align: center;
+	font: italic bold 20px/40px Georgia, serif;
+	padding-right: 10%;
+}
+/*
+footer.pie{
+	height: 50px;
+}
+*/
