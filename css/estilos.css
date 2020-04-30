@@ -1,99 +1,323 @@
 *{
-	padding: 0;
-	margin: 0;
-
+    padding: 0;
+    margin: 0;
 }
 body{
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: Tomato;
-
+    font-family: 'Roboto', sans-serif;
+    background-color: #e2e0e0;
 }
-header.cabeceraPrincipal, nav.menuPrincipal, section.galeriaPrincipal, section.noticias, aside.sponsor, footer.pie{
-	background-color: #7fda80;
-	color: #005500;
-	width: 90%;
-	margin: 0 auto;
-	border:2px solid DodgerBlue;
-	border-style: dashed;
+header.cabeceraPrincipal, nav.menuPrincipal, section.galeriaPrinicpal,aside.sponsor,main,footer.piePagina{
+    background-color: #ECDAD1;
+    color: rgb(47, 83, 10);
+    width: 90%;
+    margin: 0 auto;
+}
+header.cabeceraPrincipal{
+    background-color: #ffffff;
 }
 header.cabeceraPrincipal h1{
-	/*padding: 4px 3px 2px 1px;
-	padding: 4px 2px;/*arriba y abajo, izquierda derecha*/
-	/*padding: 4px;*/
-	padding: 1em;
-	width: 20%;
-	display: inline-block;
+    font-size: 25px;
+    color: #000;
+}
+.cabeceraPrincipal .logo{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 20%;
+    display: inline-block;
+    padding: 1em 1em;
+    text-align: center;
+}
+.logo .iniciales-logo{
+    padding: 5px;
+    border: 2px solid #000;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 section.seccionCabecera{
-	width: 70%;
-	display: inline-block;
-	text-align: right;
+    width: 70%;
+    display: inline-block;
+    text-align: right;
 }
-nav.menuPrincipal	{
-	margin-top: 2px;
+/*  -------------- Barra de busqueda  ------------------*/
+.seccionCabecera .barra-busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
 
+.seccionCabecera .barra-busqueda input{
+    min-width: 30%;
+    padding:  0 14px;
+    height: 33px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
-nav.menuPrincipal div{
-	padding: 1em;
-	text-align: center;
+.seccionCabecera .barra-busqueda button{
+    height: 35px;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: #545454;
+    background-color: #f8f8f8;
+    padding: 0 20px;
+    cursor: pointer;
 }
-section.galeriaPrincipal{
-	margin-top: 2px;
-	height: 450px;
+.seccionCabecera .barra-busqueda button:hover{
+    background-color: #f1f1f1;
 }
-section.galeriaPrincipal h2{
-	text-align: center;
+/*  -------------- FIN Barra de busqueda  ------------------*/
+
+
+nav.menuPrincipal, main,aside.sponsor,footer.piePagina{
+    margin-top: 2px;
+}
+nav.menuPrincipal{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+nav.menuPrincipal a{
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    transition:  0.2s ease all;
+}
+nav.menuPrincipal a:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+section.galeriaPrinicpal{
+    margin-top: 1px;
+}
+section.galeriaPrinicpal img{
+    width: 100%;
+}
+
+
+main{
+    text-align: center;
+    background-color: #ECDAD1;
+}
+section.articulo{
+    width: 45%;
+    display: inline-block;
 }
 section.noticias{
-	text-shadow: 2px 2px 5px red;
-	border-radius: 8px;
-	border: 1.5px solid red;
-	padding: 5px;
-	font: bold 14px verdana;
-	text-align: center;
-	background: #ABE102;
-
+    display: flex;
+    background: #F49D71;
+    text-align: justify;
 }
-aside.sponsor{
-	border-style: outset;
-	background-color: #0C9C3E;
-	text-shadow: 1px 1px orange;
-	font-weight: 900;
+.noticias img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-#sponsor1{
-	width: 10%;
-  	height: 20%;  	
+.noticias .contenedor-texto{
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-#Logo{
-	display: block;
-	border-radius: 4px;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 50%;
-  	border: 2px solid #FAFE08;
+.noticias .contenedor1{
+    width: 95%;
 }
 
-#Logo:hover{
-	box-shadow: 0 0 4px 3px rgba(236, 34, 10, 0.5);
-	transform: scaleX(-1);
+.noticias .titulo{
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
-.redes:hover {
-    opacity: 0.7;
+.noticias .fecha{
+    font-size: 15px;
+    color: #868686;
+    margin-bottom: 10px;
 }
-.redes { 
-  color: white;
-  border: 1px solid #F85604;
+.noticias .extracto{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #868686;
 }
-#derechos{
-	text-align: center;
-	font: italic bold 20px/40px Georgia, serif;
-	padding-right: 10%;
+.btn-link{
+    background: #F49D71 ;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
-/*
-footer.pie{
-	height: 50px;
+.btn-link:hover{
+    background-color: #FFFFFF;
 }
-*/
+
+/*  -------------- SPONSOR  ------------------*/
+.sponsor{
+    background-color: #ECDAD1;
+}
+.cuadricula{
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.cuadricula:after, .item:before {
+    content: '';
+    display: table;
+}
+.cuadricula:after {
+    clear: both;
+}
+.cuadricula li{
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    margin: 20px;
+}
+.item{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    cursor: default;
+    box-shadow: 
+        inset 0 0 0 16px rgba(255,255,255,0.6),
+        0 1px 2px rgba(0,0,0,0.1);
+        
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.info {
+    position: absolute;
+    background: rgba(63,147,147, 0.8);
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    opacity: 0;
+    
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    
+    -webkit-backface-visibility: hidden;
+
+}
+.info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 45px 0 0 0;
+    height: 140px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 
+        0 0 1px #fff, 
+        0 1px 2px rgba(0,0,0,0.3);
+}
+.info p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out 0.4s;
+    -moz-transition: all 1s ease-in-out 0.4s;
+    -o-transition: all 1s ease-in-out 0.4s;
+    -ms-transition: all 1s ease-in-out 0.4s;
+    transition: all 1s ease-in-out 0.4s;
+}
+
+.info p a {
+    display: block;
+    color: #fff;
+    color: rgba(255,255,255,0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.info p a:hover {
+    color: #fff222;
+    color: rgba(255,242,34, 0.8);
+}
+.item:hover {
+    box-shadow: 
+        inset 0 0 0 1px rgba(255,255,255,0.1),
+        0 1px 2px rgba(0,0,0,0.1);
+}
+.item:hover .info {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.item:hover .info p {
+    opacity: 1;
+}
+.sponsor1 { 
+    background-image: url(../images/sponsor1.jpg);
+}
+
+.sponsor2 { 
+    background-image: url(../images/sponsor2.jpg);
+}
+
+.sponsor3 { 
+    background-image: url(../images/sponsor3.jpg);
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*  -------------- FIN SPONSOR  ------------------*/
+/*  -------------- FOOTER  ------------------*/
+
+footer.piePagina{
+    text-align: right;
+}
+footer.piePagina h5{
+    padding: 1em 2em;
+}
+/*  -------------- FIN FOOTER  ------------------*/
